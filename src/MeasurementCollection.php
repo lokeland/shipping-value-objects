@@ -4,9 +4,6 @@ namespace Lokeland\SVO;
 
 use Illuminate\Support\Collection;
 
-/**
- * @extends Collection<\Lokeland\SVO\Measurement> // TODO:: Is this the correct way?
- */
 class MeasurementCollection extends Collection
 {
     public function findLongest(): ?Measurement
