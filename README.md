@@ -116,13 +116,14 @@ use Lokeland\SVO\Dimensions;
 use Lokeland\SVO\Measurement;
 
 $shippingAttributes = ShippingAttributes::make(
-    weight: \Lokeland\SVO\Weight::fromKilos(),
-    Dimensions::make(
+    weight: Weight::fromKilos(),
+    dimensions: Dimensions::make(
         height: Measurement::fromMillimeters(100),
         width: Measurement::fromMillimeters(100),
         length: Measurement::fromMillimeters(100),
     )
 );
+
 $shippingAttributes->weight;
 $shippingAttributes->dimensions;
 
